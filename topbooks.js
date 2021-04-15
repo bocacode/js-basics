@@ -20,9 +20,10 @@ function returnTopBooks(books) {
 }
 
 function returnTopBooksLongWay(books) {
+  const howManyBooks = books.length
   let topBooks = []
-  for (let i = 0; i < books.length; i++) {
-    if(books[i].rating >= 4.25) {
+  for(let i = 0; i < howManyBooks; i++) {
+    if(books[i].rating >= 4.25){
       topBooks.push(books[i])
     }
   }
